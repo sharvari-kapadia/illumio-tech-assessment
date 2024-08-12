@@ -36,8 +36,8 @@ public class FlowLogReader {
                 String[] lineContent = line.split(" ");
                 // If the log flow record is of version 2, populate the dstport and protocol
                 if (lineContent.length >= 8) {
-                    String dstport = lineContent[6];
-                    String protocolName = protocolMap.get(lineContent[7]);
+                    String dstport = lineContent[6].toLowerCase();
+                    String protocolName = protocolMap.get(lineContent[7].toLowerCase());
                     if("-".equals(dstport) || "-".equals(protocolName)) {
                         continue;
                     }
