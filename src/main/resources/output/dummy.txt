@@ -1,0 +1,2 @@
+The result files will be placed under resources/output folder.
+dummy.txt is a dummy file so that git allows to commit an empty folder required to write the result files.
